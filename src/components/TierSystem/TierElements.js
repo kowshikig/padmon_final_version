@@ -8,27 +8,34 @@ export const Container = styled.div`
     
     
     @media (max-width:991px){
-        height:2200px;
-        
+        height:2200px;   
     }
+    
 `
 export const Wrapper = styled.div`
     display:grid;
-    grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));
-    
-    
+    grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));  
+
+    @media (max-width:480px){
+        margin-left: -50px;
+    }
+    text-align: justify;
 
 `
 export const  Box1 = styled.div`
     
     display:grid;
     place-items: center;
-
     
 `
 export const Title = styled.h2`
     color:#fff;
     font-size: 3em;
+
+    @media (max-width:480px){
+        font-size: 2em;
+        margin-left: 0px;
+    }
 `
 export const Box2 = styled.div`
     display:grid;
@@ -40,14 +47,11 @@ export const SubBox1 = styled.div`
     
 `
 export const Img = styled.img`
-    width: 100%;
-    
-    
+    width: 100%;    
 `
 export const SubBox2 = styled.div`
     display:grid;
     grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
-   
 `
 
 export const Subs1 = styled.div`
@@ -59,17 +63,16 @@ export const Subs1 = styled.div`
 `
 
 export const ContentP = styled.p`
-color:white;
+    color:white;
+    @media (max-width:480px){
+        font-size: 16px;
+    }
 `
 export const Subs2 = styled.div`
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(150px, 200px));
-    
-    
     column-gap: 15px;
     place-content:center;
-    
-    
 `
 export const Cards = styled.div`
     width:200px;
@@ -81,9 +84,9 @@ export const Cards = styled.div`
     gap:5px;
     margin:20px 0;
     background: linear-gradient(180deg, #002992 0%, rgba(53, 92, 194, 0.2) 100%);
-border-radius: 25px;
-backdrop-filter: blur(10px);
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    
 `
 
 export const TitleH1 = styled.h2`
@@ -100,8 +103,7 @@ export const ConP = styled.p`
     span {
         color:white;
         margin-left:5px;
-    }
-    
+    }  
 `
 export const ConP2 = styled.p`
     font-size: 12px;

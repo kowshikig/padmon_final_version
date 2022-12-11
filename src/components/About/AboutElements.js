@@ -16,17 +16,14 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     top:-140px;
-    
     clip-path: polygon(0% 17%,100% 0%,100% 100%,0% 100%);
-    /* background: linear-gradient(173.67deg, #00A6A6 11.25%, rgba(0, 255, 255, 0) 79.3%); */
     
-    /* background:red; */
-    @media (max-width:991px){
+    @media (max-width:480px){
         clip-path:none;
         position:relative;
         top:0;
         height: 1000px;
-        margin-left: -40px;
+        margin-left: -80px;
     }
     
     
@@ -39,29 +36,25 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    
     z-index: 100;
-    
     padding: 0 100px;
-
+    
     @media (max-width:991px){
         z-index:0;
         
-    }
-    
-    
-    
-    
-
-    
+    }   
 `
 export const Title = styled.div`
+    width:100%;
     margin-bottom:50px;
     color:white;
     font-size: 24px;
+    margin-left: 1150px;
+    
 
-    @media (max-width:991px){
-        margin-left: 70px;
+    @media (max-width:480px){
+        margin-left: 220px;
+        font-size:14px;
     }
 `
 export const GridContainer = styled.div`
@@ -131,4 +124,9 @@ export const Img3 = styled.img`
 export const Content = styled.div`
     color:#fff;
     font-size: 16px;
+    width:325px;
+
+    @media (max-width:480px){
+        font-size: 14px;
+    }
 `

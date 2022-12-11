@@ -65,6 +65,10 @@ export const TopLine = styled.div`
     text-transform: uppercase;
     margin-bottom:16px;
 
+    @media (max-width:480px){
+        font-size: 14px;
+    }
+
 `
 export const Heading = styled.h1`
     
@@ -76,7 +80,7 @@ export const Heading = styled.h1`
     
 
     @media screen and (max-width:480px) {
-        font-size: 30px;
+        font-size: 28px;
     }
 `
 export const Subtitle = styled.p`
@@ -107,6 +111,7 @@ export const BtnWrap = styled.div`
             
         }
     }
+    
 `
 export const Button = styled.button`
 border: none;
@@ -131,8 +136,8 @@ border: none;
         color:#fff;
         border:2px solid aqua;
     }
-    @media (max-width:991px){
-        font-size: 12px;
+    @media (max-width:480px){
+        display:none;
     }
 `
 export const Button2 = styled.button`

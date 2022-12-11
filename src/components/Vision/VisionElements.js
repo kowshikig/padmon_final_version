@@ -25,9 +25,9 @@ export const Box1 = styled.div`
     color:#fff;
     display:grid;
     place-items: center;
-    @media (max-width:991px){
-        
-        margin-left:-100px;
+    @media (max-width:480px){
+        font-size: 2em;
+        margin-left:-140px;
     }
 `
 export const Box2 = styled.div`
@@ -39,7 +39,7 @@ export const Box2 = styled.div`
     padding: 0px;
     @media (max-width:991px){
         
-        margin-left:-50px;
+        margin-left:-70px;
     }
     
 `
@@ -47,7 +47,7 @@ export const Cards = styled.div`
     padding:10px;
     display: grid;
     place-items: center;
-    width: 400px;
+    width: 350px;
     
 
     
@@ -59,10 +59,18 @@ export const Titleh2 = styled.h2`
     margin-bottom: 20px;
     font-family: bold;
     color:#fff;
+
+    @media (max-width:480px){
+        font-size:20px;
+    }
 `
 export const ContentP = styled.p`
     font-size:16px;
     color:#fff;
+
+    @media (max-width:480px){
+        font-size: 14px;
+    }
 `
 export const Box3 = styled.div`
 
@@ -71,9 +79,9 @@ place-items: center;
 grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 column-gap: 0px;
 padding: 50px 40px;
-@media (max-width:991px){
+@media (max-width:480px){
         
-        margin-left:-100px;
+        margin-left:-140px;
     }
 
 `
