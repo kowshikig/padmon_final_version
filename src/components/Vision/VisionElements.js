@@ -57,7 +57,7 @@ export const Image = styled.img`
 `
 export const Titleh2 = styled.h2`
     margin-bottom: 20px;
-    font-family: bold;
+    
     color:#fff;
 
     @media (max-width:480px){
